@@ -1,0 +1,30 @@
+{
+  "name": "again-mumbai",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "images": "node scripts/images.mjs",
+    "preview:single": "vite build -c vite.preview.config.ts"
+  },
+  "dependencies": {
+    "@fontsource/archivo-black": "^5.0.0",
+    "@fontsource/caveat": "^5.0.0",
+    "@fontsource/noto-sans-devanagari": "^5.0.0",
+    "@fontsource/noto-sans-kannada": "^5.0.0",
+    "@fontsource/space-mono": "^5.0.0",
+    "gsap": "^3.12.5",
+    "idb-keyval": "^6.3.0",
+    "lenis": "^1.1.13"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0",
+    "vite-plugin-pwa": "^2.0.0",
+    "vite-plugin-singlefile": "^2.0.2"
+  }
+}

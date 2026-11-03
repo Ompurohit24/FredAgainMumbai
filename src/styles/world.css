@@ -1,0 +1,19 @@
+.wlead{max-width:560px;line-height:1.7;font-size:14px;margin:-10px 0 28px}
+.wv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}.wv.in{opacity:1;transform:none}
+.shelf{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:14px 6px 30px;margin:0 -6px}
+.slv{position:relative;flex:0 0 min(250px,72vw);aspect-ratio:1;scroll-snap-align:start;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);color:var(--ink);text-align:left;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;overflow:hidden;
+background:radial-gradient(circle at 25% 20%,#ffffffaa,transparent 45%),conic-gradient(from 200deg at 70% 70%,var(--c),#fff 40%,var(--c) 70%,#fff);transition:transform .2s}
+.slv:hover{transform:translate(-3px,-3px)}
+.sn{position:absolute;top:8px;right:12px;font:400 54px/1 var(--display);opacity:.35}
+.slv b{font:400 30px/1 var(--display);text-transform:uppercase}.slv small{font-size:11px;font-weight:700;margin-top:4px}.sy{font-size:10px;opacity:.7}
+.sd{position:absolute;inset:0;background:var(--ink);color:var(--paper);padding:20px;font-size:13px;line-height:1.6;display:grid;align-content:center;transform:translateY(101%);transition:transform .35s}
+.slv.open .sd{transform:none}
+.wh{font:400 clamp(30px,5vw,52px)/1 var(--display);text-transform:uppercase;margin:34px 0 20px}
+.wall{display:flex;flex-wrap:wrap;gap:16px}
+.stk{background:var(--c);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:12px 14px;max-width:230px;rotate:var(--r);display:flex;flex-direction:column;gap:4px;transition:rotate .2s,transform .2s}
+.stk:hover{rotate:0deg;transform:translateY(-4px)}
+.stk b{font:400 20px/1.05 var(--display);text-transform:uppercase}.stk span{font-size:12px;font-weight:700}
+.stk em{font:700 10px var(--mono);font-style:normal;background:var(--ink);color:var(--paper);padding:2px 6px;align-self:flex-start}
+.stk button{margin-top:6px;align-self:flex-start;background:#fff;border:2px solid var(--ink);font:700 10px var(--mono);letter-spacing:.08em;padding:5px 8px;cursor:pointer}
+.stk button:hover{background:var(--ink);color:var(--paper)}
+.stk.in{outline:3px dashed var(--ink);outline-offset:3px}

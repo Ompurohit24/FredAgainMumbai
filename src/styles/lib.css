@@ -1,0 +1,36 @@
+.libwrap{min-width:0;max-width:100%;background:var(--wash,var(--yellow));border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:clamp(16px,3vw,32px);transition:background 1s}
+.libgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,40px)}.libgrid>*{min-width:0}
+.cass{position:relative;width:100%;max-width:440px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;aspect-ratio:1.7;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:0 8%;box-shadow:4px 4px 0 var(--ink)}
+.cass .lbl{flex:1;min-width:0;overflow:hidden;text-align:center;background:var(--paper);border:2px solid var(--ink);padding:10px 6px}
+.lbl b{display:block;font:400 clamp(14px,2.4vw,20px) var(--display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform:uppercase}
+.lbl small{display:block;font-size:11px;opacity:.7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.reel{flex:none;width:clamp(44px,9vw,64px);aspect-ratio:1;border:3px solid var(--ink);border-radius:50%;display:grid;place-items:center;background:var(--paper)}
+.reel i{width:70%;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--ink) 0 12%,transparent 0 33%,var(--ink) 0 45%,transparent 0 66%,var(--ink) 0 78%,transparent 0)}
+.playing .reel i{animation:spin 2.2s linear infinite}
+#vz,#wf{display:block;width:100%}
+#vz{height:90px;margin-top:16px}#wf{height:64px;margin-top:10px;touch-action:none;cursor:pointer;background:#ffffff80;border:2px solid var(--ink)}
+.tm{display:flex;justify-content:space-between;font:700 11px var(--mono);margin:6px 0 12px}
+.ctl{display:flex;justify-content:center;gap:10px}
+.ctl button,.mini button{background:#fff;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);width:44px;height:44px;font:700 15px var(--mono);cursor:pointer}
+.ctl .big,.mini #mpp{background:var(--orange)}
+.ctl button.on{background:var(--cobalt);color:#fff}
+.ctl button:active,.mini button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.drop{border:2px dashed var(--ink);background:#ffffff90;padding:20px;text-align:center;display:grid;gap:8px;justify-items:center}
+.drop.over{background:var(--orange)}.drop b{font:400 24px var(--display);text-transform:uppercase}.drop small{opacity:.7;font-size:11px}
+.drop .btn{margin:0;border:0;cursor:pointer;font-family:var(--mono)}
+#qlist{min-width:0;list-style:none;margin:14px 0 0;padding:0;max-height:420px;overflow:auto}
+#qlist li{min-width:0;display:flex;align-items:center;gap:8px;padding:8px 4px;border-bottom:1px solid #11111133}
+#qlist li.cur{background:#ffffffb0;outline:2px solid var(--ink)}
+.th{width:44px;height:44px;flex:none;display:grid;place-items:center;background:var(--paper);border:2px solid var(--ink);overflow:hidden}.th img{width:100%;height:100%;object-fit:cover}
+.rowmain{flex:1;min-width:0;text-align:left;background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:4px}
+.rowmain b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rowmain small{display:block;font-size:11px;opacity:.65;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#qlist em{font:700 9px var(--mono);font-style:normal;background:var(--teal);border:1.5px solid var(--ink);padding:2px 5px;white-space:nowrap}
+#qlist li>button:not(.rowmain){background:none;border:0;font-size:16px;cursor:pointer;padding:6px}
+.emptyrow{justify-content:center;font-size:12px;opacity:.7}
+.qmsg{min-height:18px;margin:10px 0 0;font-size:12px;font-weight:700;color:var(--cobalt)}.tip{opacity:.65;font-size:11px;line-height:1.5}
+.mini{position:fixed;z-index:90;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 12px);width:min(560px,calc(100% - 24px));display:flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:8px}
+.mini[hidden]{display:none}.mini button{width:38px;height:38px}
+.mini #mt{flex:1;min-width:0;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar{position:absolute;left:0;right:0;top:0;height:4px;background:#11111122}.mbar i{display:block;height:100%;width:0;background:var(--orange)}
+body.has-mini .fine{padding-bottom:90px}
+@media (max-width:760px){.libgrid{grid-template-columns:minmax(0,1fr)}}
